@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 120
+
+[tool.pylint."messages control"]
+disable = [
+    "missing-module-docstring",
+    "missing-function-docstring",
+    "missing-class-docstring",
+    "fixme",
+]
+max-line-length = 120
+recursive = true
+ignore-paths = ".venv"
+
+[tool.mypy]
+files = "**/*.py"
+exclude = ".venv"
+
+[tool.pytest.ini_options]
+addopts = "--capture=no --verbose --junit-xml=results.xml --color=yes"
+filterwarnings = "ignore::DeprecationWarning"

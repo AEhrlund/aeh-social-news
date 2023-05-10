@@ -1,0 +1,10 @@
+results.xml
+__pycache__
+.vscode/
+
+.coverage
+cov_html/
+
+tweets.html
+
+salt
