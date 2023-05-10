@@ -4,55 +4,55 @@
             "tweet_id": 1652754596677271552,
             "value": 680,
             "date": "2023-04-30T19:19:37+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652750134076137472,
             "value": 60,
             "date": "2023-04-30T19:01:53+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652675600895684608,
             "value": 2145,
             "date": "2023-04-30T14:05:43+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652670770588295169,
             "value": 90,
             "date": "2023-04-30T13:46:31+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652669895669161984,
             "value": 60,
             "date": "2023-04-30T13:43:02+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652402547422887936,
             "value": 40,
             "date": "2023-04-29T20:00:42+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652103310357274627,
             "value": 30,
             "date": "2023-04-29T00:11:38+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652102741240557574,
             "value": 150,
             "date": "2023-04-29T00:09:22+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1652102259646296074,
             "value": 60,
             "date": "2023-04-29T00:07:27+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1651784061705134081,
