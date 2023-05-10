@@ -9,36 +9,39 @@ def get_user_url(user_id):
     return f"https://twitter.com/intent/user?user_id={user_id}"
 
 
-def get_value_limit(user_id, limit):
+def get_average_value(user_id):
     db = database.Database(database.Database.BackendFile(user_id))
     user_tweets = db.get_user_data(user_id)
-    num = len(user_tweets)
-    if num > 0:
-        index = num -1
-        tot_values = 0
-        while index >= 0:
-            value = user_tweets[index]['value']
-            tot_values += value
-            index -= 1
-        return int((tot_values / num) * (limit/100))
+    if user_tweets:
+        values = [tweet["value"] for tweet in user_tweets]
+        tot_values = sum(values)
+        average = int(tot_values / len(values))
+        return average
     return 0
+
+
+def get_value_limit(user_id, limit):
+    average = get_average_value(user_id)
+    value_limit = int(average * (limit/100))
+    return value_limit
 
 
 def get_tweets(user_id, min_value, num):
     db = database.Database(database.Database.BackendFile(user_id))
-    user_tweets = db.get_user_data(user_id)
-    index = len(user_tweets) - 1
     tweets = []
-    while index >= 0 and len(tweets) < num:
-        index -= 1
-        tweet = user_tweets[index]
-        if tweet['read'] == False and tweet['value'] >= min_value:
-            print(f"    +++++ Reading tweet {tweet}")
-            tweets.append(tweet)
-        elif tweet['read'] == False:
-            print(f"    ----- Skipping {tweet}")
-        user_tweets[index]['read'] = True
-    db.update_user_data(user_id, user_tweets)
+    user_tweets = db.get_user_data(user_id)
+    if user_tweets:
+        for index in range(len(user_tweets) - 1,-1,-1):
+            if user_tweets[index]['read'] == False and user_tweets[index]['value'] >= min_value:
+                user_tweets[index]['read'] = True
+                print(f"    +++++ Reading tweet {user_tweets[index]}")
+                tweets.append(user_tweets[index])
+                if len(tweets) == num:
+                    break
+            elif user_tweets[index]['read'] == False:
+                user_tweets[index]['read'] = True
+                print(f"    ----- Skipping {user_tweets[index]}")
+        db.update_user_data(user_id, user_tweets)
     return tweets
 
 
