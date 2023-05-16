@@ -149,11 +149,6 @@
         "name": "Dr Jordan B Peterson",
         "username": "jordanbpeterson"
     },
-    "499584878": {
-        "limit": 99,
-        "name": "Statista",
-        "username": "StatistaCharts"
-    },
     "1351906066519490562": {
         "limit": 99,
         "name": "A Beautiful Culture",
@@ -188,11 +183,6 @@
         "limit": 99,
         "name": "A Painting A Day",
         "username": "APainting_ADay"
-    },
-    "81783051": {
-        "limit": 99,
-        "name": "Artsy",
-        "username": "artsy"
     },
     "992050266714361858": {
         "limit": 99,
@@ -313,5 +303,10 @@
         "limit": 70,
         "name": "Tucker Carlson",
         "username": "TuckerCarlson"
+    },
+    "3131030656": {
+        "limit": 70,
+        "name": "Elsa Widding",
+        "username": "ElsaWidding"
     }
 }
