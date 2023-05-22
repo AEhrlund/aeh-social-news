@@ -9,20 +9,25 @@ def get_user_url(user_id):
     return f"https://twitter.com/intent/user?user_id={user_id}"
 
 
-def get_average_value(user_id):
+def get_highest_value(user_id):
     db = database.Database(database.Database.BackendFile(user_id))
     user_tweets = db.get_user_data(user_id)
     if user_tweets:
         values = [tweet["value"] for tweet in user_tweets]
-        tot_values = sum(values)
-        average = int(tot_values / len(values))
-        return average
+        highest_value = max(values)
+        print(highest_value)
+        values.remove(highest_value)
+        highest_value = max(values)
+        print(highest_value)
+        values.remove(highest_value)
+        return max(values)
     return 0
 
 
 def get_value_limit(user_id, limit):
-    average = get_average_value(user_id)
-    value_limit = int(average * (limit/100))
+    highest_value = get_highest_value(user_id)
+    value_limit = int(highest_value * (limit/100))
+    print(f"{highest_value} => {value_limit}")
     return value_limit
 
 
@@ -32,15 +37,16 @@ def get_tweets(user_id, min_value, num):
     user_tweets = db.get_user_data(user_id)
     if user_tweets:
         for index in range(len(user_tweets) - 1,-1,-1):
-            if user_tweets[index]['read'] == False and user_tweets[index]['value'] >= min_value:
+            value = user_tweets[index]['value']
+            if user_tweets[index]['read'] == False and value >= min_value:
                 user_tweets[index]['read'] = True
-                print(f"    +++++ Reading tweet {user_tweets[index]}")
+                print(f"    +++++ {value} Reading tweet {user_tweets[index]}")
                 tweets.append(user_tweets[index])
                 if len(tweets) == num:
                     break
             elif user_tweets[index]['read'] == False:
                 user_tweets[index]['read'] = True
-                print(f"    ----- Skipping {user_tweets[index]}")
+                print(f"    ----- {value} Skipping {user_tweets[index]}")
         db.update_user_data(user_id, user_tweets)
     return tweets
 
