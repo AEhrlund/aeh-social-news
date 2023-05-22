@@ -4,97 +4,97 @@
             "tweet_id": 1656781235639959558,
             "value": 65725,
             "date": "2023-05-11T22:00:02+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656705747236065281,
             "value": 79484,
             "date": "2023-05-11T17:00:04+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656645392732225537,
             "value": 38965,
             "date": "2023-05-11T13:00:15+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656418842263044097,
             "value": 85552,
             "date": "2023-05-10T22:00:01+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656343377254944768,
             "value": 70659,
             "date": "2023-05-10T17:00:09+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656283005491503105,
             "value": 45765,
             "date": "2023-05-10T13:00:15+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656056456129683457,
             "value": 88526,
             "date": "2023-05-09T22:00:01+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1655980969437061120,
             "value": 87572,
             "date": "2023-05-09T17:00:04+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1655935686447595524,
             "value": 43589,
             "date": "2023-05-09T14:00:08+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1655618581319811075,
             "value": 87668,
             "date": "2023-05-08T17:00:04+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1655573311907061761,
             "value": 47261,
             "date": "2023-05-08T14:00:11+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1655331678041133056,
             "value": 74946,
             "date": "2023-05-07T22:00:01+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1655256186630053889,
             "value": 74237,
             "date": "2023-05-07T17:00:02+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1654969292474179585,
             "value": 65687,
             "date": "2023-05-06T22:00:01+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1654893790459727874,
             "value": 89231,
             "date": "2023-05-06T17:00:00+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1654848504106475520,
             "value": 657452,
             "date": "2023-05-06T14:00:03+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1654606902490460166,

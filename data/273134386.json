@@ -4,31 +4,31 @@
             "tweet_id": 1656734572246171648,
             "value": 49473,
             "date": "2023-05-11T18:54:37+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656708531058360337,
             "value": 59321,
             "date": "2023-05-11T17:11:08+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656532677116190721,
             "value": 106922,
             "date": "2023-05-11T05:32:21+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656361617909510152,
             "value": 32107,
             "date": "2023-05-10T18:12:38+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656235722825687041,
             "value": 370,
             "date": "2023-05-10T09:52:22+00:00",
-            "read": false
+            "read": true
         },
         {
             "tweet_id": 1656184746370580480,
