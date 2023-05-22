@@ -280,33 +280,48 @@
         "username": "joelsh"
     },
     "599357202": {
-        "limit": 70,
+        "limit": 99,
         "name": "Roger Scruton Quotes",
         "username": "Scruton_Quotes"
     },
     "34504853": {
-        "limit": 70,
+        "limit": 99,
         "name": "Ivar Arpi",
         "username": "Ivarpi"
     },
     "409852041": {
-        "limit": 70,
+        "limit": 99,
         "name": "Lars \u00c5berg",
         "username": "TheWestBook"
     },
     "340401320": {
-        "limit": 70,
+        "limit": 99,
         "name": "Myra \u00c5hbeck \u00d6hrman",
         "username": "Myrannosaurus"
     },
     "22703645": {
-        "limit": 70,
+        "limit": 99,
         "name": "Tucker Carlson",
         "username": "TuckerCarlson"
     },
     "3131030656": {
-        "limit": 70,
+        "limit": 99,
         "name": "Elsa Widding",
         "username": "ElsaWidding"
+    },
+    "69441586": {
+        "limit": 99,
+        "name": "Patrick Deneen",
+        "username": "PatrickDeneen"
+    },
+    "283640557": {
+        "limit": 99,
+        "name": "Tim Stanley",
+        "username": "timothy_stanley"
+    },
+    "405605548": {
+        "limit": 99,
+        "name": "Peter Hitchens",
+        "username": "ClarkeMicah"
     }
 }
