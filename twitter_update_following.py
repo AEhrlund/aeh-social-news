@@ -34,7 +34,7 @@ def update_following():
             name = user["name"]
             print(f"Adding new user: {name}")
             user_data = {
-                "limit": 70,
+                "limit": 99,
                 "name": name,
                 "username": user["username"],
             }

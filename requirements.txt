@@ -3,3 +3,7 @@ pylint
 mypy
 pytest
 pytest-cov
+tweepy
+typing
+pytz
+cryptography
