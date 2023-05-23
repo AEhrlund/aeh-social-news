@@ -14,12 +14,19 @@ def get_highest_value(user_id):
     user_tweets = db.get_user_data(user_id)
     if user_tweets:
         values = [tweet["value"] for tweet in user_tweets]
+
         highest_value = max(values)
         print(highest_value)
         values.remove(highest_value)
+
         highest_value = max(values)
         print(highest_value)
         values.remove(highest_value)
+
+        highest_value = max(values)
+        print(highest_value)
+        values.remove(highest_value)
+
         return max(values)
     return 0
 
