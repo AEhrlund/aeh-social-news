@@ -244,11 +244,6 @@
         "name": "Oscar Jonsson",
         "username": "OAJonsson"
     },
-    "2835451658": {
-        "limit": 60,
-        "name": "Andy Ng\u00f4 \ud83c\udff3\ufe0f\u200d\ud83c\udf08",
-        "username": "MrAndyNgo"
-    },
     "26131848": {
         "limit": 60,
         "name": "Michael Easter",
@@ -323,5 +318,15 @@
         "limit": 60,
         "name": "Peter Hitchens",
         "username": "ClarkeMicah"
+    },
+    "349347318": {
+        "limit": 70,
+        "name": "Peter Attia",
+        "username": "PeterAttiaMD"
+    },
+    "268328453": {
+        "limit": 70,
+        "name": "LM Sacasas",
+        "username": "LMSacasas"
     }
 }
