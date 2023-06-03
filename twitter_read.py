@@ -16,15 +16,12 @@ def get_highest_value(user_id):
         values = [tweet["value"] for tweet in user_tweets]
 
         highest_value = max(values)
-        print(highest_value)
         values.remove(highest_value)
 
         highest_value = max(values)
-        print(highest_value)
         values.remove(highest_value)
 
         highest_value = max(values)
-        print(highest_value)
         values.remove(highest_value)
 
         return max(values)
@@ -34,7 +31,6 @@ def get_highest_value(user_id):
 def get_value_limit(user_id, limit):
     highest_value = get_highest_value(user_id)
     value_limit = int(highest_value * (limit/100))
-    print(f"{highest_value} => {value_limit}")
     return value_limit
 
 
@@ -80,7 +76,7 @@ def get_tweets_to_read():
         min_value = get_value_limit(user_id, limit)
         tweets += get_tweets(user_id, min_value, 4)
         if len(tweets) > num_limit:
-            return tweets
+            break
     print(f"{len(tweets)} tweets to read!")
     return tweets
 
