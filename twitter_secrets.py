@@ -6,6 +6,7 @@ def get_secret():
 
 
 def write_new_secret():
+    # Fyll i värden när det ska sparas en ny secret
     secret = {
         "bearer_token": "",
         "consumer_key": "",

@@ -11,13 +11,8 @@ class TwitterAPI:
     @staticmethod
     def get_client() -> tweepy.Client:
         twitter_secret = lib.secret.get_secret()
-        return tweepy.Client(
-            twitter_secret["bearer_token"],
-            twitter_secret["consumer_key"],
-            twitter_secret["consumer_secret"],
-            twitter_secret["access_token"],
-            twitter_secret["access_token_secret"],
-        )
+        print(twitter_secret)
+        return tweepy.Client(bearer_token=twitter_secret["bearer_token"])
 
     def get_my_user_id(self) -> int:
         data, _, _, _ = self._client.get_me()
